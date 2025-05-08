@@ -60,6 +60,7 @@ db.sequelize.sync()
 // define routes here
 app.use("/", landingRouter);
 app.use("/destinations", searchDestinationsRouter);
+app.use("/api", searchDestinationsRouter); // ✅ add this!
 app.use("/hotels", hotelsRouter);
 app.use("/rooms", roomDisplayRouter);
 app.use("/book_hotel", bookHotelRouter);

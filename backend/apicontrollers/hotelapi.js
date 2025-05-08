@@ -45,7 +45,6 @@ const getHotelsDetailsAPI = async (destination_id) => {
 
 
 
-
 const getHotelPricesAPI = async (params) => {
   try {
     const response = await axios.get("https://hotelapi.loyalty.dev/api/hotels/prices", { params });
